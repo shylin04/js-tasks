@@ -5,7 +5,7 @@ document.getElementById("button").addEventListener("click", function() {
  
 }
 );
-message.oninput=showResult;
+message.oninput=showTexts;
 function showResult(){
   text.innerText=this.value;
 }
