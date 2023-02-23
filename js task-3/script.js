@@ -1,11 +1,11 @@
-var message = document.getElementById("message");
+var text = document.getElementById("myInput");
 document.getElementById("button").addEventListener("click", function() {
-    alert( message.value );
+    alert( text.value );
     text.innerText=this.value;
  
 }
 );
-message.oninput=showTexts;
-function showResult(){
-  text.innerText=this.value;
-}
+function showText() {
+   let text = document.getElementById("myInput").value;
+   document.getElementById("text").innerHTML = "You wrote: " + text;
+ }
