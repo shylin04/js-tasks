@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const friendList = document.querySelector("#list");
 const vowels = ["a", "e", "i", "o", "u"];
 list.addEventListener("click", function (event) {
@@ -17,3 +18,19 @@ list.addEventListener("click", function (event) {
     }
   }
 });
+=======
+const friendList=document.querySelector("#list");
+const vowels=["a","e","i","o","u"];
+list.addEventListener("click", function(event){
+ if(event.target.tagName==="LI"){
+   const firstLetter=event.target.textContent[0];
+   if(vowels.includes(firstLetter)){
+     event.target.classList.add("red-background");
+     
+   }else{
+     event.target.classList.add("green-background");
+     
+}
+}
+});
+>>>>>>> 747c7cadbaa8a604a3c70909430da6b537ac34da

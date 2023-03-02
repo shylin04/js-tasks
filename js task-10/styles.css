@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .box {
   width: 100px;
   height: 100px;
@@ -26,4 +27,34 @@
 
 .hidden {
   display: none;
+=======
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+/* hidden class is used to hide the box when its clicked*/
+
+.hidden {
+  display: none;
+>>>>>>> 747c7cadbaa8a604a3c70909430da6b537ac34da
 }
