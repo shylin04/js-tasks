@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #box {
     width: 200px;
     height: 200px;
@@ -5,4 +6,13 @@
     border:2px solid black;
     margin:auto ;
     margin-top:100px;
+=======
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border:2px solid black;
+    margin:auto ;
+    margin-top:100px;
+>>>>>>> 2ae3cc70f0f1480af9021003b53506e7973f21ca
   }
