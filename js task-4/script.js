@@ -1,36 +1,14 @@
-<<<<<<< HEAD
-const friendList = document.querySelector("#list");
-const vowels = ["a", "e", "i", "o", "u"];
-list.addEventListener("click", function (event) {
+// get the id attribute of the html element //
+const friendsList = document.getElementById("list");
 
-  if (event.target.tagName === "LI") {
-    const firstLetter = event.target.textContent[0];
+list.addEventListener("click", function(event) {
+  const listItem = event.target; // determine the clicked element in listItem // 
+  const firstLetter = listItem.textContent.charAt(0).toLowerCase(); //get the firstletter using charAt and convert it to lowercase//
 
-    if (vowels.includes(firstLetter)) {
-
-      event.target.classList.add("red-background");
-      event.target.classList.remove("green-background");
-
-    } else {
-
-      event.target.classList.add("green-background");
-      event.target.classList.remove("red-background");
-    }
+  if (["a", "e", "i", "o", "u"].includes(firstLetter)) { //if the first letter of the listitem include vowels change the background color of the list item to red//
+    listItem.style.backgroundColor = "red";
+  } else {
+    listItem.style.backgroundColor = "green"; // else change  to green//
   }
 });
-=======
-const friendList=document.querySelector("#list");
-const vowels=["a","e","i","o","u"];
-list.addEventListener("click", function(event){
- if(event.target.tagName==="LI"){
-   const firstLetter=event.target.textContent[0];
-   if(vowels.includes(firstLetter)){
-     event.target.classList.add("red-background");
-     
-   }else{
-     event.target.classList.add("green-background");
-     
-}
-}
-});
->>>>>>> 747c7cadbaa8a604a3c70909430da6b537ac34da
+

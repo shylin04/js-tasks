@@ -1,27 +1,16 @@
-<<<<<<< HEAD
+// get the id attribute of the html element //
 let familyMember = document.getElementsByTagName("li");
-for(let i=0; i<familyMember.length; i++){
-   familyMember[i].addEventListener("click", function(){
-   if(i % 2 == 0)
+
+for(let i=0; i<familyMember.length; i++){ 
+   
+  familyMember[i].addEventListener("click", function(){
+   if(i % 2 == 0) // if the clicked list (li) is in even order change the color to red//
    {
      this.style.color= "red";
    }
-   else{
+   else{ //else change to green//
      this.style.color= "green";
    }
 });
 }
-=======
-let familyMember = document.getElementsByTagName("li");
-for(let i=0; i<familyMember.length; i++){
-   familyMember[i].addEventListener("click", function(){
-   if(i % 2 == 0)
-   {
-     this.style.color= "red";
-   }
-   else{
-     this.style.color= "green";
-   }
-});
-}
->>>>>>> 747c7cadbaa8a604a3c70909430da6b537ac34da
+

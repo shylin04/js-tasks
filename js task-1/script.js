@@ -1,27 +1,17 @@
-<<<<<<< HEAD
-let previousClicked =[];
+let previousClicked =[]; // define a previousClicked  to add the clicked button//
+ 
 document.querySelectorAll('.box').forEach(function (box){
   box.addEventListener('click', function(){
-     if(previousClicked.length===0){
-         alert(this.innerHTML);
-         previousClicked.push(this.innerHTML);
-     }else{
-         alert(previousClicked + ',' +this.innerHTML);
+ 
+    // if there is no previously clicked button//  
+    if(previousClicked.length===0){ 
+        alert(this.innerHTML); // give alert messege of currently clicked button content  //
+         previousClicked.push(this.innerHTML); // push the clicked button to the previousClicked //
+     
+        // if there is previously clicked button alert previosly clicked button and currently clicked button content//
+        }else{
+         alert(previousClicked + ',' +this.innerHTML);  
          previousClicked.push(this.innerHTML);
 }
 });
 });
-=======
-let previousClicked =[];
-document.querySelectorAll('.box').forEach(function (box){
-  box.addEventListener('click', function(){
-     if(previousClicked.length===0){
-         alert(this.innerHTML);
-         previousClicked.push(this.innerHTML);
-     }else{
-         alert(previousClicked + ',' +this.innerHTML);
-         previousClicked.push(this.innerHTML);
-}
-});
-});
->>>>>>> 747c7cadbaa8a604a3c70909430da6b537ac34da
